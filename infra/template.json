@@ -5,7 +5,7 @@
         "subscriptionId": {
             "type": "string"
         },
-        "name": {
+        "webSiteName": {
             "type": "string"
         },
         "location": {
@@ -17,7 +17,7 @@
             "metadata": {
                 "description": "Describes the name of the Application Insights resource"
             }
-        }
+        },
         "hostingPlanName": {
             "type": "string"
         },
@@ -56,7 +56,7 @@
     "resources": [
         {
             "apiVersion": "2018-11-01",
-            "name": "[parameters('name')]",
+            "name": "[parameters('webSiteName')]",
             "type": "Microsoft.Web/sites",
             "kind": "functionapp",
             "location": "[parameters('location')]",
@@ -67,7 +67,7 @@
                 "[resourceId('microsoft.insights/components/', parameters('appInsightsName'))]"
             ],
             "properties": {
-                "name": "[parameters('name')]",
+                "name": "[parameters('webSiteName')]",
                 "siteConfig": {
                     "appSettings": [
                         {
@@ -88,7 +88,7 @@
                         },
                         {
                             "name": "WEBSITE_CONTENTSHARE",
-                            "value": "[concat(toLower(parameters('name')), 'ba2c')]"
+                            "value": "[concat(toLower(parameters('webSiteName')), 'ba2c')]"
                         },
                         {
                             "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
