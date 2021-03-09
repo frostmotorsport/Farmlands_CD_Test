@@ -11,6 +11,9 @@
         "location": {
             "value": "Australia East"
         },
+        "appInsightsName": {
+            "value": "z-edis-adodemo-ais-dv-as"
+        },
         "hostingPlanName": {
             "value": "z-edis-adodemo-asp-dv-as"
         },
