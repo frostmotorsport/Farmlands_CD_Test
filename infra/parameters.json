@@ -6,22 +6,22 @@
             "value": "0b73c55d-df8e-4553-89d5-ea5afd1bed1c"
         },
         "name": {
-            "value": "ajittest"
+            "value": "z-edis-adodemo-afa-dv-as"
         },
         "location": {
             "value": "Australia East"
         },
         "hostingPlanName": {
-            "value": "ASP-ajittest-820f"
+            "value": "z-edis-adodemo-asp-dv-as"
         },
         "serverFarmResourceGroup": {
-            "value": "ajit-test"
+            "value": "z-edis-adodemo-rg-dv-ae"
         },
         "alwaysOn": {
             "value": false
         },
         "storageAccountName": {
-            "value": "ajittestst1"
+            "value": "zedisadodemodvaest1"
         },
         "sku": {
             "value": "Dynamic"
