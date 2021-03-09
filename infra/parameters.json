@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "0b73c55d-df8e-4553-89d5-ea5afd1bed1c"
+        },
+        "name": {
+            "value": "ajittest"
+        },
+        "location": {
+            "value": "Australia East"
+        },
+        "hostingPlanName": {
+            "value": "ASP-ajittest-820f"
+        },
+        "serverFarmResourceGroup": {
+            "value": "ajit-test"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "storageAccountName": {
+            "value": "ajittestst1"
+        },
+        "sku": {
+            "value": "Dynamic"
+        },
+        "skuCode": {
+            "value": "Y1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "use32BitWorkerProcess": {
+            "value": true
+        }
+    }
+}
