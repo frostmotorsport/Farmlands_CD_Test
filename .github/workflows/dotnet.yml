@@ -26,8 +26,8 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release
-    - name: Publish  
-      run: dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
+    # - name: Publish  
+    #   run: dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
     - uses: actions/upload-artifact@main
       with:
         name: webpack artifacts
@@ -52,7 +52,7 @@ jobs:
       - uses: actions/download-artifact@main
         with: 
           name: webpack artifacts
-          path: public
+          path: public/
       - name: Deploy web app 
         uses: azure/webapps-deploy@v2
         with:
