@@ -41,6 +41,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - uses: actions/checkout@v2
       - name: Deploy web app 
         uses: azure/webapps-deploy@v2
         with:
