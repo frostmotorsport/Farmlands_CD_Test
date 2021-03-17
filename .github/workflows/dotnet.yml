@@ -31,7 +31,7 @@ jobs:
     - uses: actions/upload-artifact@main
       with:
         name: webpack artifacts
-        path: public/
+        path: /
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
     #- name: Publish  
@@ -52,7 +52,7 @@ jobs:
       - uses: actions/download-artifact@main
         with: 
           name: webpack artifacts
-          path: public/
+          path: /
       - name: Deploy web app 
         uses: azure/webapps-deploy@v2
         with:
